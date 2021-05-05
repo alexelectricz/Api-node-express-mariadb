@@ -5,6 +5,7 @@ const app = express()
 const auth = require('./controllers/usuarios/auth')
 const crearCliente = require('./controllers/clientes/crearCliente')
 const crudCliente = require('./controllers/clientes/crudClientes')
+const crudCliente = require('./controllers/creditos/IngCreditos')
 const { DbModels, sequelize } = require('./modelos/db.config')
 const tokenExtractor = require('./middleware/tokerExtractor')
 const PORT = process.env.PORT || 5000
